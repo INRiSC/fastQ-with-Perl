@@ -2,12 +2,12 @@
 
 use strict;
 
-open FILE, '../jiankuihe-exome-1.fq' || die "Can not open"; #打开文件
+open FILE, '#######.fq' || die "Can not open"; #open your reference .fq file
 
-open OUT1,'>basequality.txt';
+open OUT1,'>basequality.txt'; #You can change the output file location
 open OUT2,'>score.txt';
 open OUT3,'>GC.txt';
-open OUT4,'>duplication.txt';
+open OUT4,'>duplication.txt'; #output of the 4 properties of the .fq file
 
 $seq = 0;
 $qual = 0;
